@@ -1,0 +1,25 @@
+version: "3.1"
+
+intents:
+  - greet
+  - insurance_advisory
+  - policy_details
+  - premium_due
+  - claim_intimation
+  - document_checklist
+  - claim_status
+  - human_handoff
+  - cancel
+  - out_of_scope
+  - nlu_fallback
+  - provide_input
+
+entities:
+  - product_category
+
+actions:
+  - action_insurance_workflow
+
+session_config:
+  session_expiration_time: 30
+  carry_over_slots_to_new_session: false

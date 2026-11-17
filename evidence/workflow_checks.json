@@ -1,0 +1,105 @@
+{
+  "checks": [
+    {
+      "scenario": "Service startup and protected endpoints",
+      "observed": "Both services started. Anonymous chat, unsigned callback, and raw command were rejected.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Advisory with entity extraction",
+      "observed": "Health was extracted, age 12 was rejected, and ₹5 lakh within ₹1,200 returned Health Essentials.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Advisory no-match branch",
+      "observed": "A cover and budget outside the catalog returned no match.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Product-specific document checklist",
+      "observed": "The motor theft checklist included a police report.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Policy details, OTP validation and inbox isolation",
+      "observed": "Wrong formats and a wrong code were rejected. Only the originating session saw the code.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Unknown policy and mismatched mobile",
+      "observed": "Both produced the same prompt and no delivered demo code.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Three wrong codes end verification",
+      "observed": "No policy or premium data was exposed.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Verified premium enquiry",
+      "observed": "The sample record returned the annual premium and due date.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Verified seed claim tracking",
+      "observed": "The health policy owner retrieved the seeded Under review claim.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Cross-policy claim lookup denied",
+      "observed": "The seeded health claim could not be read after verifying the motor policy.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Claim validations and confirmation boundary",
+      "observed": "Malformed, future and uncovered dates were blocked. Review left the database unchanged.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Atomic claim registration and duplicate retry",
+      "observed": "Two concurrent requests with the same ID returned one reference, claim, outbox and audit row.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Motor, life and travel claim branches",
+      "observed": "Motor asked for a workshop. Life and travel skipped the facility. Each registered a claim.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Cancel clears the active draft",
+      "observed": "Cancellation returned to the menu and discarded verification state.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Human handoff queue",
+      "observed": "A local support record was queued with a reference and a topic.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Out-of-scope recovery",
+      "observed": "Repeated unrelated requests offered supported menu choices and handoff.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Audit and tracker input privacy",
+      "observed": "The audit and Rasa server log did not contain the sample description or demo mobile.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "Claim persisted across restart",
+      "observed": "A newly verified session found the claim written by the earlier server process.",
+      "status": "PASS"
+    },
+    {
+      "scenario": "OTP expiry, resend and verification expiry",
+      "observed": "A controlled clock exercised 180-second OTP expiry and the 600-second verified window.",
+      "status": "PASS"
+    }
+  ],
+  "passed": 19,
+  "latency_ms": {
+    "n": 101,
+    "p50": 34.64,
+    "p95": 49.28
+  }
+}

@@ -1,0 +1,361 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hi
+      - hello
+      - hey
+      - good morning
+      - good afternoon
+      - good evening
+      - hello there
+      - hi there
+      - hey there
+      - greetings
+      - hi bot
+      - hello assistant
+      - hey assistant
+      - good day
+      - morning
+      - how are you
+      - howdy
+      - hi can you hear me
+      - hello anyone there
+      - nice to meet you
+      - hello good morning
+      - good evening assistant
+      - hi I am new here
+      - hey can we start
+      - is the assistant online
+      - hello I have arrived
+      - hi team
+      - a very good morning
+      - hey bot are you there
+      - hello can we talk
+  - intent: insurance_advisory
+    examples: |
+      - recommend a policy
+      - help me choose an insurance plan
+      - what plans can I buy
+      - suggest [health](product_category) insurance
+      - advise me on insurance options
+      - I want to buy [motor](product_category) cover
+      - show [life](product_category) insurance plans
+      - which policy is best for my budget
+      - compare available insurance plans
+      - looking to purchase a new policy
+      - what kind of [travel](product_category) insurance should I get
+      - help me select the right insurance
+      - I need a new insurance plan for my family
+      - do you offer [health](product_category) cover for a family
+      - I am shopping for [car](product_category) insurance
+      - show me plans with sufficient coverage
+      - which insurance products are available
+      - guide me on choosing a plan
+      - find a policy within my budget
+      - I need cover for a trip abroad
+      - give me options for [life](product_category) cover
+      - suggest a new plan for my vehicle
+      - I am looking for an insurance recommendation
+      - can you shortlist insurance for me
+      - what cover could I purchase today
+      - explore insurance options
+      - I want affordable [health](product_category) cover
+      - help me decide which policy to buy
+      - can I get a plan recommendation
+      - I need to choose between insurance products
+      - suggest cover I can afford
+      - what is a suitable insurance plan for my needs
+      - find me a new [travel](product_category) plan
+      - show new policies I can purchase
+  - intent: policy_details
+    examples: |
+      - view my policy
+      - show my policy details
+      - look up my existing insurance policy
+      - what is covered in my current plan
+      - can I see my policy summary
+      - when does my policy expire
+      - what is my existing coverage
+      - fetch my policy information
+      - what is my sum insured
+      - show the policy I already hold
+      - look up my policy number
+      - I need details of my existing cover
+      - tell me my policy dates
+      - show my insurance contract summary
+      - please check the validity of my policy
+      - what benefits are in the policy I bought
+      - access my insurance policy
+      - show me how much I am insured for
+      - how much does my current plan cover
+      - I want a breakdown of my active policy
+      - confirm if my existing policy is active
+      - show my policy schedule
+      - tell me about my current insurance contract
+      - pull up my current policy
+      - display my coverage information
+      - I need my current policy record
+      - look at the terms of my own policy
+      - what is the coverage end date of my plan
+      - details about my purchased insurance
+      - can you retrieve the policy I own
+      - pull my coverage summary for POL-HLT-1001
+      - what plan and cover do I currently have
+      - display my existing policy limits
+      - check my existing insurance cover
+  - intent: premium_due
+    examples: |
+      - check my premium due date
+      - when is my next premium due
+      - show my renewal payment
+      - how much is my outstanding premium
+      - what premium amount do I need to pay
+      - when do I renew my policy
+      - tell me my premium and renewal date
+      - when is my insurance payment due
+      - what is the renewal premium for my policy
+      - I need my premium due information
+      - show the next instalment due
+      - what date must I pay the premium
+      - check my upcoming policy renewal
+      - tell me when my renewal payment is due
+      - how much do I owe for renewal
+      - what is the next premium instalment
+      - pull up my payment due date
+      - show my policy billing due date
+      - remind me when to renew my cover
+      - how much will my next premium be
+      - get my insurance renewal amount
+      - is a premium payment due soon
+      - I want the billing amount and due date
+      - next renewal date please
+      - what do I need to pay to renew
+      - check renewal information for my insurance
+      - show when the next payment falls due
+      - can you check my policy premium balance
+      - give me the annual premium amount and deadline
+      - I need the date of my next renewal
+      - find the next premium payment date
+      - see my upcoming insurance bill
+      - check the date and cost of my renewal
+      - tell me the deadline for premium payment
+  - intent: claim_intimation
+    examples: |
+      - register a claim
+      - file a new insurance claim
+      - I need to make a claim
+      - open a new claim
+      - submit a claim for an accident
+      - start a [motor](product_category) claim
+      - how can I lodge a claim
+      - report a new loss on my policy
+      - initiate a [health](product_category) claim
+      - I want to register a [travel](product_category) claim
+      - help me start my claim application
+      - begin claim intimation
+      - I need to file a [life](product_category) claim
+      - report an incident and create a claim
+      - can I raise a claim for hospitalisation
+      - put in a claim for damage to my [car](product_category)
+      - start the claim filing process
+      - I have an accident to report
+      - create a claim ticket
+      - can you open an insurance claim for me
+      - lodge a new claim for reimbursement
+      - begin a new claim request
+      - I want to initiate a claim
+      - I need to report a new insured event
+      - I need help filing a new claim today
+      - open a [health](product_category) reimbursement case
+      - report a [vehicle](product_category) incident to the insurer
+      - I want to submit a first notice of loss
+      - record my accident as a new claim
+      - start a claim request under my policy
+      - request a new insurance payout for my loss
+      - help me lodge a [travel](product_category) claim
+      - I want to notify you about a new claim
+      - can we create a new insurance case
+  - intent: document_checklist
+    examples: |
+      - show me the claim documents
+      - what documents do I need for a claim
+      - list paperwork for a [health](product_category) claim
+      - show the document checklist
+      - which papers are required for [motor](product_category)
+      - what evidence should I prepare
+      - documents required for a [life](product_category) claim
+      - need the checklist for claim submission
+      - what proof should I provide for a [travel](product_category) claim
+      - what supporting documents should I upload
+      - give me a list of claim forms and documents
+      - do I need bills to claim
+      - which records are needed for reimbursement
+      - check the required claim paperwork
+      - tell me the documents I should gather
+      - what files go with my claim form
+      - I want claim document requirements
+      - show [car](product_category) claim paperwork requirements
+      - which documents are mandatory for a claim
+      - I need the insurance claim checklist
+      - what paperwork will the insurer ask for
+      - what do I attach to the claim application
+      - show the required supporting evidence
+      - what records should I submit with a claim
+      - tell me which forms I need
+      - list attachments for a claim
+      - which receipts and records are necessary
+      - papers needed for my claim
+      - where is the checklist for supporting documents
+      - list claim evidence needed for [medical](product_category) cover
+      - tell me the paperwork needed for insurance reimbursement
+      - what papers should accompany the claim
+      - is an invoice needed as proof for my claim
+      - show requirements for claim evidence
+  - intent: claim_status
+    examples: |
+      - track a claim
+      - check my claim status
+      - where is my claim now
+      - what is the progress of my existing claim
+      - look up my claim reference
+      - has my claim been processed
+      - show the status of my insurance case
+      - can I track the claim I filed
+      - what happened to my submitted claim
+      - tell me the stage of my claim
+      - is my claim under review
+      - find the outcome of my existing claim
+      - has the insurer reviewed my claim yet
+      - I want an update on an open claim
+      - get the latest update on my claim
+      - see where my reimbursement claim stands
+      - is there any movement on the claim I lodged
+      - follow up on my already registered claim
+      - trace a claim by its reference
+      - was my claim settled
+      - I need a progress report on my claim
+      - check claim tracking
+      - can you locate a submitted claim
+      - how far along is my claim
+      - has my existing claim moved forward
+      - show my claim progress
+      - tell me if my claim is pending
+      - pull up the latest status of my claim
+      - claim update please
+      - find the stage of my claim processing
+      - track claim CLM-0000001001
+      - can you tell me what stage the claim has reached
+      - show me the progress of a case I already submitted
+      - I am checking on my previous claim
+  - intent: human_handoff
+    examples: |
+      - talk to a person
+      - connect me with an agent
+      - I need human support
+      - can I speak to a representative
+      - please hand this over to a person
+      - escalate my issue to a human
+      - let me talk to customer service
+      - I want to speak to support
+      - get me an advisor on the line
+      - transfer me to a live agent
+      - connect me with an insurance representative
+      - I need a staff member
+      - can a person assist me
+      - I want someone to call me
+      - put me through to customer care
+      - can you route this to your support team
+      - please get a real person
+      - I want assistance from a human agent
+      - pass my enquiry to a representative
+      - I need help from your staff
+      - contact a customer care executive
+      - reach a person from the claims team
+      - I want a live operator
+      - take me to customer support
+      - can an agent handle this instead
+      - arrange a human handoff
+      - connect me to a support desk agent
+      - get a customer service executive
+      - can I talk with a team member
+      - please escalate to an advisor
+      - I would prefer a real human representative
+      - get somebody from the support team
+      - ask a person in customer service to help
+      - send my issue to a human operator
+  - intent: cancel
+    examples: |
+      - cancel
+      - cancel this request
+      - stop this conversation
+      - exit the current flow
+      - start over
+      - go back to the menu
+      - never mind
+      - I changed my mind
+      - close this workflow
+      - abort the current task
+      - discontinue this request
+      - stop helping with this
+      - quit
+      - return to the main menu
+      - forget this operation
+      - I want to end this task
+      - restart the conversation
+      - I do not wish to proceed
+      - cancel the process
+      - abandon this request
+      - leave this process
+      - let us go back
+      - drop the current request
+      - I am done here
+      - back to the beginning
+      - stop the workflow now
+      - end my current request
+      - I would like to start again
+      - cancel what I am doing
+      - I want to stop and return to the main options
+      - discard this in progress request
+      - I no longer want to continue with this
+  - intent: out_of_scope
+    examples: |
+      - tell me a joke
+      - what is the weather tomorrow
+      - play music for me
+      - help me book a restaurant
+      - who won the cricket match
+      - translate hello into Spanish
+      - order me a pizza
+      - write a poem about a mountain
+      - find nearby hotels
+      - set an alarm for six
+      - solve an equation for me
+      - plan a weekend trip
+      - what is the capital of France
+      - show recent movie releases
+      - teach me how to cook pasta
+      - check my bank account balance
+      - reset my email password
+      - book railway tickets
+      - show me the football schedule
+      - what time is sunrise
+      - convert dollars into rupees
+      - tell me a recipe for cake
+      - can you fix my laptop
+      - recommend a song
+      - what are the cricket scores
+      - give me advice on planting tomatoes
+      - explain how a microwave works
+      - order groceries for home delivery
+      - compare phone prices
+      - explain the laws of motion
+      - give me restaurant directions
+      - schedule a haircut
+      - write Python code to sort a list
+      - where can I get a train timetable
+
+  - regex: product_category
+    examples: |
+      - (?i:health|medical|hospitali[sz]ation|motor|car|vehicle|bike|two[ -]wheeler|life|term|travel|trip)

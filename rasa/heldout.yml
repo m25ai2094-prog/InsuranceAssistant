@@ -1,0 +1,123 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hello and good day
+      - hey good afternoon
+      - hello is this chat active
+      - hi there assistant
+      - a pleasant evening to you
+      - good morning to you
+      - hey glad to be here
+      - hello anyone online
+      - hi thanks for being here
+      - greetings assistant
+  - intent: insurance_advisory
+    examples: |
+      - I am looking to take out a new policy
+      - can you suggest suitable travel cover
+      - which plan can I purchase for a tight budget
+      - could you recommend a health plan for me
+      - show me choices before I buy insurance
+      - help me find the right cover for my needs
+      - I would like to shop for vehicle cover
+      - is there a suitable plan for my family
+      - suggest some plans I could buy
+      - I want options for a new life insurance policy
+  - intent: policy_details
+    examples: |
+      - what protection is included in the cover I hold
+      - can I see the insured amount on my existing plan
+      - retrieve my policy summary please
+      - what are the dates on the policy I purchased
+      - tell me the limits of my current cover
+      - can you look up my own insurance record
+      - show information for my active policy
+      - please tell me when my current cover ends
+      - display the insurance plan I already have
+      - can you check my contract and show the policy details
+  - intent: premium_due
+    examples: |
+      - when should I make the next insurance payment
+      - how much is due on my next renewal
+      - is my annual premium coming up
+      - check the deadline for renewing my policy
+      - I need the amount of my next instalment
+      - what is the due date of the insurance bill
+      - tell me the date I need to renew the policy
+      - show the payment deadline and premium amount
+      - what do I owe and when is the premium due
+      - find my upcoming renewal payment date
+  - intent: claim_intimation
+    examples: |
+      - a crash damaged my vehicle and I need to file a claim
+      - I would like to lodge a fresh claim
+      - can I submit a new reimbursement request
+      - help me file my first notice of loss
+      - begin registration of a new insurance claim
+      - I want to report a loss and open a claim
+      - my baggage went missing and I want to make a travel claim
+      - register my incident as a claim
+      - could we start a claim under my health cover
+      - how do I get a new claim opened
+  - intent: document_checklist
+    examples: |
+      - what supporting paperwork should I collect for a motor claim
+      - could you list the proof needed for this claim
+      - which papers do I submit for a travel claim
+      - tell me what to attach with my insurance claim
+      - give me the required claim documents for health insurance
+      - can you show the list of documents the insurer needs
+      - what records must accompany a reimbursement request
+      - I need the list of forms and evidence for life claims
+      - which files are required when I submit the claim
+      - can I see the paperwork checklist before submitting
+  - intent: claim_status
+    examples: |
+      - can you tell me where my open claim stands
+      - has the case I filed been reviewed yet
+      - I need an update on the claim I submitted earlier
+      - show me what stage my registered claim is at
+      - can I look up the progress of a submitted claim
+      - is there an update on my reimbursement case
+      - please track my existing claim
+      - has my insurance claim been settled yet
+      - find the latest status for my case reference
+      - I want to follow up on a claim I already lodged
+  - intent: human_handoff
+    examples: |
+      - I would like a person from customer support
+      - please pass my issue to an agent
+      - could you get a staff member to help
+      - I want this escalated to a real person
+      - put me through to a support representative
+      - could I speak with a live operator
+      - can a human take over this conversation
+      - let me reach your customer care team
+      - transfer this enquiry to a human
+      - could I talk directly to an insurance representative
+  - intent: cancel
+    examples: |
+      - can we stop here please
+      - discard this request and return to the menu
+      - I would rather end this conversation
+      - please abandon this task
+      - I do not want to continue with the current workflow
+      - take me back to the starting options
+      - lets stop the current process
+      - clear the request I was making
+      - I want to go back and start over
+      - cancel my current task in this chat
+  - intent: out_of_scope
+    examples: |
+      - find a Thai restaurant near me
+      - give me the score of the latest football game
+      - can you teach me to bake bread
+      - what is the forecast for Mumbai on Friday
+      - write a haiku about rain
+      - recommend a film to watch tonight
+      - book two seats on a train
+      - show me the price of a new phone
+      - explain the difference between a comet and an asteroid
+      - what ingredients should I buy for soup

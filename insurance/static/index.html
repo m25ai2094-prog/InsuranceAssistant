@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#321f2d">
+  <title>Insurance Assistant | IIT Jodhpur M.Tech Project</title>
+  <link rel="stylesheet" href="/assets/app.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div><strong>Insurance Assistant</strong><span>Service desk</span></div>
+    </div>
+    <nav aria-label="Main navigation">
+      <button class="nav-item" type="button" data-view="overview" aria-current="page">
+        <span aria-hidden="true">⌂</span>Overview
+      </button>
+      <button class="nav-item" type="button" data-view="claims">
+        <span aria-hidden="true">▤</span>Claim centre
+      </button>
+      <button class="nav-item" type="button" data-view="assistant">
+        <span aria-hidden="true">···</span>Assistant
+      </button>
+    </nav>
+    <div class="sidebar-end">
+      <button class="nav-item" type="button" data-service="support" disabled>
+        <span aria-hidden="true">?</span>Get support
+      </button>
+      <div id="health" class="connection" role="status" data-state="loading">
+        <i aria-hidden="true"></i><span id="health-text">Starting local demo</span>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main" tabindex="-1">
+    <div class="main-inner">
+      <header class="masthead">
+        <span id="current-view">Overview</span>
+        <span class="demo-label"><i aria-hidden="true"></i>Fictional demo data</span>
+      </header>
+      <div class="notice" id="startup" hidden role="alert">
+        <span id="startup-message"></span>
+        <button class="button quiet" id="reconnect" type="button">Reconnect</button>
+      </div>
+
+      <section id="overview-view" aria-labelledby="overview-title">
+        <div class="hero">
+          <div class="hero-main">
+            <h1 id="overview-title" tabindex="-1">Manage your coverage<br class="wide-break"> and claims.</h1>
+            <p>Explore sample plans, check your policy, or follow a claim from the incident to its status.</p>
+            <div class="actions">
+              <button class="button paper" type="button" data-service="register" disabled>Start a claim <span aria-hidden="true">→</span></button>
+              <button class="button on-dark" type="button" data-service="advice" disabled>Compare plans</button>
+            </div>
+          </div>
+          <div class="hero-journey">
+            <div class="folder-mark" aria-hidden="true"><i></i><i></i><i></i></div>
+            <h2>Claim journey</h2>
+            <ol>
+              <li>Verify your policy</li>
+              <li>Add incident details</li>
+              <li>Review documents and submit</li>
+            </ol>
+            <button class="text-action" type="button" data-view="claims">Open Claim centre <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+        <div class="resume" data-resume hidden>
+          <div><strong>Request in progress</strong><p data-resume-name></p></div>
+          <button class="button quiet" type="button" data-view="assistant">Resume request <span aria-hidden="true">→</span></button>
+        </div>
+        <section class="service-section" aria-labelledby="home-claims-title">
+          <h2 id="home-claims-title">Claims</h2>
+          <div class="tiles" data-cards="register track checklist"></div>
+        </section>
+        <section class="service-section" aria-labelledby="home-policy-title">
+          <h2 id="home-policy-title">Coverage and renewals</h2>
+          <div class="tiles" data-cards="advice policy premium"></div>
+        </section>
+      </section>
+
+      <section id="claims-view" aria-labelledby="claims-title" hidden>
+        <div class="page-heading">
+          <h1 id="claims-title" tabindex="-1">Claim centre</h1>
+          <p>File a demo claim, prepare its supporting documents, or check the status of a recorded claim.</p>
+        </div>
+        <div class="resume" data-resume hidden>
+          <div><strong>Request in progress</strong><p data-resume-name></p></div>
+          <button class="button quiet" type="button" data-view="assistant">Resume request <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="tiles" data-cards="register track checklist"></div>
+        <section class="prepare" aria-labelledby="prepare-title">
+          <h2 id="prepare-title">Before you start</h2>
+          <dl>
+            <div><dt>For a new claim</dt><dd>Choose a demo policy. Have a date within its coverage period and a short description of the incident.</dd></div>
+            <div><dt>For an existing claim</dt><dd>Use the reference on your receipt and verify the policy linked to that claim.</dd></div>
+            <div><dt>For the document checklist</dt><dd>Choose an insurance type and incident. You can view the sample list before starting a claim.</dd></div>
+          </dl>
+        </section>
+      </section>
+
+      <section id="assistant-view" aria-labelledby="assistant-title" hidden>
+        <div class="page-heading assistant-heading">
+          <div>
+            <h1 id="assistant-title" tabindex="-1">Insurance assistant</h1>
+            <p>Type a request or use the options provided at each step.</p>
+          </div>
+          <button class="button quiet" id="reset" type="button" disabled>New session</button>
+        </div>
+        <div id="switch-request" class="notice" hidden>
+          <p id="switch-message"></p>
+          <div class="actions">
+            <button class="button quiet" id="keep-request" type="button">Keep current request</button>
+            <button class="button primary" id="replace-request" type="button">Discard and start</button>
+          </div>
+        </div>
+        <div class="assistant-grid">
+          <section class="conversation panel" aria-labelledby="chat-title">
+            <div class="conversation-header">
+              <h2 id="chat-title">Conversation</h2>
+              <span id="current-step" role="status">Choose a service</span>
+            </div>
+            <div id="messages" class="messages" role="log" aria-label="Conversation history" tabindex="0"></div>
+            <div class="compose-area">
+              <div id="review" class="review" hidden></div>
+              <form id="document-form" hidden>
+                <fieldset id="document-options"></fieldset>
+                <button class="button primary" id="review-claim" type="submit">Review claim <span aria-hidden="true">→</span></button>
+              </form>
+              <div id="inbox" class="inbox" hidden>
+                <div><strong>Demo inbox</strong><p id="inbox-message">Checking for a code…</p></div>
+                <button class="button quiet" id="code" type="button" hidden></button>
+              </div>
+              <div id="choices" class="actions choices" aria-label="Options for this step"></div>
+              <form id="composer" class="composer">
+                <label class="sr-only" for="input">Your message</label>
+                <input id="input" name="message" type="text" autocomplete="off" maxlength="400" required disabled>
+                <button id="send" class="button primary" type="submit" disabled>Send <span aria-hidden="true">↑</span></button>
+              </form>
+              <p id="compose-note" class="compose-note" role="status"></p>
+              <button id="retry" class="button quiet" type="button" hidden>Retry last message</button>
+            </div>
+          </section>
+
+          <aside class="context" aria-label="Request details">
+            <section class="panel context-card" aria-labelledby="request-title">
+              <h2 id="request-title">Current request</h2>
+              <p id="request-name">Choose a service to begin.</p>
+              <ol id="request-progress" aria-label="Request progress"></ol>
+            </section>
+            <section class="panel context-card" id="records" aria-labelledby="records-title" hidden>
+              <h2 id="records-title">Demo records</h2>
+              <label for="record-select">Sample policy</label>
+              <select id="record-select"></select>
+              <dl id="record-values"></dl>
+            </section>
+            <details class="panel context-card trace">
+              <summary>Workflow trace</summary>
+              <p id="model-intent">Awaiting a request</p>
+              <ol id="trace-list" aria-label="Recent workflow events"></ol>
+            </details>
+          </aside>
+        </div>
+      </section>
+      <footer><span>Insurance Assistant · M.Tech project</span><span>Kapildev Sukhsagar Yadav · M25AI2158 · IIT Jodhpur</span></footer>
+    </div>
+  </main>
+</body>
+</html>

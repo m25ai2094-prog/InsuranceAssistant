@@ -1,0 +1,1025 @@
+{
+  "model_sha256": "cc32be4158581c9f3fa5a5539954f8cbbfb8961fcfee1d7faf730cb29f5d513e",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.10.22",
+  "training_examples": 334,
+  "heldout_examples": 100,
+  "classes": [
+    "greet",
+    "insurance_advisory",
+    "policy_details",
+    "premium_due",
+    "claim_intimation",
+    "document_checklist",
+    "claim_status",
+    "human_handoff",
+    "cancel",
+    "out_of_scope"
+  ],
+  "correct": 96,
+  "accuracy": 0.96,
+  "scores": {
+    "greet": {
+      "precision": 0.9090909090909091,
+      "recall": 1.0,
+      "f1-score": 0.9523809523809523,
+      "support": 10
+    },
+    "insurance_advisory": {
+      "precision": 0.9090909090909091,
+      "recall": 1.0,
+      "f1-score": 0.9523809523809523,
+      "support": 10
+    },
+    "policy_details": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 10
+    },
+    "premium_due": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 10
+    },
+    "claim_intimation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 10
+    },
+    "document_checklist": {
+      "precision": 0.9090909090909091,
+      "recall": 1.0,
+      "f1-score": 0.9523809523809523,
+      "support": 10
+    },
+    "claim_status": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 10
+    },
+    "human_handoff": {
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1-score": 0.9473684210526316,
+      "support": 10
+    },
+    "cancel": {
+      "precision": 0.9,
+      "recall": 0.9,
+      "f1-score": 0.9,
+      "support": 10
+    },
+    "out_of_scope": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1-score": 0.888888888888889,
+      "support": 10
+    },
+    "accuracy": 0.96,
+    "macro avg": {
+      "precision": 0.9627272727272727,
+      "recall": 0.9600000000000002,
+      "f1-score": 0.9593400167084377,
+      "support": 100
+    },
+    "weighted avg": {
+      "precision": 0.9627272727272728,
+      "recall": 0.96,
+      "f1-score": 0.9593400167084377,
+      "support": 100
+    }
+  },
+  "confusion": [
+    [
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      9,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      9,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      8
+    ]
+  ],
+  "raw_fallbacks": 0,
+  "latency_ms": {
+    "p50": 5.492,
+    "p95": 6.788
+  },
+  "predictions": [
+    {
+      "text": "hello and good day",
+      "expected": "greet",
+      "predicted": "greet",
+      "raw_intent": "greet",
+      "confidence": 0.9999411106109619,
+      "inference_ms": 6.702
+    },
+    {
+      "text": "hey good afternoon",
+      "expected": "greet",
+      "predicted": "greet",
+      "raw_intent": "greet",
+      "confidence": 0.9999268054962158,
+      "inference_ms": 5.675
+    },
+    {
+      "text": "hello is this chat active",
+      "expected": "greet",
+      "predicted": "greet",
+      "raw_intent": "greet",
+      "confidence": 0.6447936296463013,
+      "inference_ms": 6.38
+    },
+    {
+      "text": "hi there assistant",
+      "expected": "greet",
+      "predicted": "greet",
+      "raw_intent": "greet",
+      "confidence": 0.9999387264251709,
+      "inference_ms": 5.472
+    },
+    {
+      "text": "a pleasant evening to you",
+      "expected": "greet",
+      "predicted": "greet",
+      "raw_intent": "greet",
+      "confidence": 0.9980734586715698,
+      "inference_ms": 5.086
+    },
+    {
+      "text": "good morning to you",
+      "expected": "greet",
+      "predicted": "greet",
+      "raw_intent": "greet",
+      "confidence": 0.9999114274978638,
+      "inference_ms": 5.492
+    },
+    {
+      "text": "hey glad to be here",
+      "expected": "greet",
+      "predicted": "greet",
+      "raw_intent": "greet",
+      "confidence": 0.999792754650116,
+      "inference_ms": 5.807
+    },
+    {
+      "text": "hello anyone online",
+      "expected": "greet",
+      "predicted": "greet",
+      "raw_intent": "greet",
+      "confidence": 0.9999364614486694,
+      "inference_ms": 5.265
+    },
+    {
+      "text": "hi thanks for being here",
+      "expected": "greet",
+      "predicted": "greet",
+      "raw_intent": "greet",
+      "confidence": 0.999681830406189,
+      "inference_ms": 5.034
+    },
+    {
+      "text": "greetings assistant",
+      "expected": "greet",
+      "predicted": "greet",
+      "raw_intent": "greet",
+      "confidence": 0.9999411106109619,
+      "inference_ms": 6.144
+    },
+    {
+      "text": "I am looking to take out a new policy",
+      "expected": "insurance_advisory",
+      "predicted": "insurance_advisory",
+      "raw_intent": "insurance_advisory",
+      "confidence": 0.9992885589599609,
+      "inference_ms": 7.051
+    },
+    {
+      "text": "can you suggest suitable travel cover",
+      "expected": "insurance_advisory",
+      "predicted": "insurance_advisory",
+      "raw_intent": "insurance_advisory",
+      "confidence": 0.999997615814209,
+      "inference_ms": 6.374
+    },
+    {
+      "text": "which plan can I purchase for a tight budget",
+      "expected": "insurance_advisory",
+      "predicted": "insurance_advisory",
+      "raw_intent": "insurance_advisory",
+      "confidence": 0.9999984502792358,
+      "inference_ms": 5.337
+    },
+    {
+      "text": "could you recommend a health plan for me",
+      "expected": "insurance_advisory",
+      "predicted": "insurance_advisory",
+      "raw_intent": "insurance_advisory",
+      "confidence": 0.9999840259552002,
+      "inference_ms": 6.826
+    },
+    {
+      "text": "show me choices before I buy insurance",
+      "expected": "insurance_advisory",
+      "predicted": "insurance_advisory",
+      "raw_intent": "insurance_advisory",
+      "confidence": 0.9999903440475464,
+      "inference_ms": 8.075
+    },
+    {
+      "text": "help me find the right cover for my needs",
+      "expected": "insurance_advisory",
+      "predicted": "insurance_advisory",
+      "raw_intent": "insurance_advisory",
+      "confidence": 0.9999963045120239,
+      "inference_ms": 6.023
+    },
+    {
+      "text": "I would like to shop for vehicle cover",
+      "expected": "insurance_advisory",
+      "predicted": "insurance_advisory",
+      "raw_intent": "insurance_advisory",
+      "confidence": 0.9967358708381653,
+      "inference_ms": 5.796
+    },
+    {
+      "text": "is there a suitable plan for my family",
+      "expected": "insurance_advisory",
+      "predicted": "insurance_advisory",
+      "raw_intent": "insurance_advisory",
+      "confidence": 0.9999935626983643,
+      "inference_ms": 6.575
+    },
+    {
+      "text": "suggest some plans I could buy",
+      "expected": "insurance_advisory",
+      "predicted": "insurance_advisory",
+      "raw_intent": "insurance_advisory",
+      "confidence": 0.9999986886978149,
+      "inference_ms": 6.424
+    },
+    {
+      "text": "I want options for a new life insurance policy",
+      "expected": "insurance_advisory",
+      "predicted": "insurance_advisory",
+      "raw_intent": "insurance_advisory",
+      "confidence": 0.9999741315841675,
+      "inference_ms": 6.55
+    },
+    {
+      "text": "what protection is included in the cover I hold",
+      "expected": "policy_details",
+      "predicted": "policy_details",
+      "raw_intent": "policy_details",
+      "confidence": 0.9963967204093933,
+      "inference_ms": 6.092
+    },
+    {
+      "text": "can I see the insured amount on my existing plan",
+      "expected": "policy_details",
+      "predicted": "policy_details",
+      "raw_intent": "policy_details",
+      "confidence": 0.9996511936187744,
+      "inference_ms": 7.47
+    },
+    {
+      "text": "retrieve my policy summary please",
+      "expected": "policy_details",
+      "predicted": "policy_details",
+      "raw_intent": "policy_details",
+      "confidence": 0.9999966621398926,
+      "inference_ms": 6.267
+    },
+    {
+      "text": "what are the dates on the policy I purchased",
+      "expected": "policy_details",
+      "predicted": "policy_details",
+      "raw_intent": "policy_details",
+      "confidence": 0.9988897442817688,
+      "inference_ms": 6.214
+    },
+    {
+      "text": "tell me the limits of my current cover",
+      "expected": "policy_details",
+      "predicted": "policy_details",
+      "raw_intent": "policy_details",
+      "confidence": 0.9999730587005615,
+      "inference_ms": 5.662
+    },
+    {
+      "text": "can you look up my own insurance record",
+      "expected": "policy_details",
+      "predicted": "policy_details",
+      "raw_intent": "policy_details",
+      "confidence": 0.999910831451416,
+      "inference_ms": 5.67
+    },
+    {
+      "text": "show information for my active policy",
+      "expected": "policy_details",
+      "predicted": "policy_details",
+      "raw_intent": "policy_details",
+      "confidence": 0.9999551773071289,
+      "inference_ms": 5.459
+    },
+    {
+      "text": "please tell me when my current cover ends",
+      "expected": "policy_details",
+      "predicted": "policy_details",
+      "raw_intent": "policy_details",
+      "confidence": 0.9996656179428101,
+      "inference_ms": 5.728
+    },
+    {
+      "text": "display the insurance plan I already have",
+      "expected": "policy_details",
+      "predicted": "policy_details",
+      "raw_intent": "policy_details",
+      "confidence": 0.999893069267273,
+      "inference_ms": 5.492
+    },
+    {
+      "text": "can you check my contract and show the policy details",
+      "expected": "policy_details",
+      "predicted": "policy_details",
+      "raw_intent": "policy_details",
+      "confidence": 0.999988317489624,
+      "inference_ms": 6.102
+    },
+    {
+      "text": "when should I make the next insurance payment",
+      "expected": "premium_due",
+      "predicted": "premium_due",
+      "raw_intent": "premium_due",
+      "confidence": 0.9998263716697693,
+      "inference_ms": 5.265
+    },
+    {
+      "text": "how much is due on my next renewal",
+      "expected": "premium_due",
+      "predicted": "premium_due",
+      "raw_intent": "premium_due",
+      "confidence": 0.9999923706054688,
+      "inference_ms": 5.029
+    },
+    {
+      "text": "is my annual premium coming up",
+      "expected": "premium_due",
+      "predicted": "premium_due",
+      "raw_intent": "premium_due",
+      "confidence": 0.9999892711639404,
+      "inference_ms": 5.391
+    },
+    {
+      "text": "check the deadline for renewing my policy",
+      "expected": "premium_due",
+      "predicted": "premium_due",
+      "raw_intent": "premium_due",
+      "confidence": 0.999754011631012,
+      "inference_ms": 5.515
+    },
+    {
+      "text": "I need the amount of my next instalment",
+      "expected": "premium_due",
+      "predicted": "premium_due",
+      "raw_intent": "premium_due",
+      "confidence": 0.9999902248382568,
+      "inference_ms": 5.388
+    },
+    {
+      "text": "what is the due date of the insurance bill",
+      "expected": "premium_due",
+      "predicted": "premium_due",
+      "raw_intent": "premium_due",
+      "confidence": 0.9999380111694336,
+      "inference_ms": 5.851
+    },
+    {
+      "text": "tell me the date I need to renew the policy",
+      "expected": "premium_due",
+      "predicted": "premium_due",
+      "raw_intent": "premium_due",
+      "confidence": 0.9998843669891357,
+      "inference_ms": 6.128
+    },
+    {
+      "text": "show the payment deadline and premium amount",
+      "expected": "premium_due",
+      "predicted": "premium_due",
+      "raw_intent": "premium_due",
+      "confidence": 0.9999898672103882,
+      "inference_ms": 5.153
+    },
+    {
+      "text": "what do I owe and when is the premium due",
+      "expected": "premium_due",
+      "predicted": "premium_due",
+      "raw_intent": "premium_due",
+      "confidence": 0.9999860525131226,
+      "inference_ms": 5.2
+    },
+    {
+      "text": "find my upcoming renewal payment date",
+      "expected": "premium_due",
+      "predicted": "premium_due",
+      "raw_intent": "premium_due",
+      "confidence": 0.9999896287918091,
+      "inference_ms": 5.156
+    },
+    {
+      "text": "a crash damaged my vehicle and I need to file a claim",
+      "expected": "claim_intimation",
+      "predicted": "claim_intimation",
+      "raw_intent": "claim_intimation",
+      "confidence": 0.999988317489624,
+      "inference_ms": 6.43
+    },
+    {
+      "text": "I would like to lodge a fresh claim",
+      "expected": "claim_intimation",
+      "predicted": "claim_intimation",
+      "raw_intent": "claim_intimation",
+      "confidence": 0.9988981485366821,
+      "inference_ms": 5.766
+    },
+    {
+      "text": "can I submit a new reimbursement request",
+      "expected": "claim_intimation",
+      "predicted": "claim_intimation",
+      "raw_intent": "claim_intimation",
+      "confidence": 0.999961256980896,
+      "inference_ms": 5.052
+    },
+    {
+      "text": "help me file my first notice of loss",
+      "expected": "claim_intimation",
+      "predicted": "claim_intimation",
+      "raw_intent": "claim_intimation",
+      "confidence": 0.9999949932098389,
+      "inference_ms": 5.833
+    },
+    {
+      "text": "begin registration of a new insurance claim",
+      "expected": "claim_intimation",
+      "predicted": "claim_intimation",
+      "raw_intent": "claim_intimation",
+      "confidence": 0.9999819993972778,
+      "inference_ms": 5.257
+    },
+    {
+      "text": "I want to report a loss and open a claim",
+      "expected": "claim_intimation",
+      "predicted": "claim_intimation",
+      "raw_intent": "claim_intimation",
+      "confidence": 0.9999884366989136,
+      "inference_ms": 5.942
+    },
+    {
+      "text": "my baggage went missing and I want to make a travel claim",
+      "expected": "claim_intimation",
+      "predicted": "claim_intimation",
+      "raw_intent": "claim_intimation",
+      "confidence": 0.9999357461929321,
+      "inference_ms": 7.505
+    },
+    {
+      "text": "register my incident as a claim",
+      "expected": "claim_intimation",
+      "predicted": "claim_intimation",
+      "raw_intent": "claim_intimation",
+      "confidence": 0.9999973773956299,
+      "inference_ms": 5.507
+    },
+    {
+      "text": "could we start a claim under my health cover",
+      "expected": "claim_intimation",
+      "predicted": "claim_intimation",
+      "raw_intent": "claim_intimation",
+      "confidence": 0.9942365288734436,
+      "inference_ms": 5.319
+    },
+    {
+      "text": "how do I get a new claim opened",
+      "expected": "claim_intimation",
+      "predicted": "claim_intimation",
+      "raw_intent": "claim_intimation",
+      "confidence": 0.999607503414154,
+      "inference_ms": 5.286
+    },
+    {
+      "text": "what supporting paperwork should I collect for a motor claim",
+      "expected": "document_checklist",
+      "predicted": "document_checklist",
+      "raw_intent": "document_checklist",
+      "confidence": 0.999993085861206,
+      "inference_ms": 5.299
+    },
+    {
+      "text": "could you list the proof needed for this claim",
+      "expected": "document_checklist",
+      "predicted": "document_checklist",
+      "raw_intent": "document_checklist",
+      "confidence": 0.9999915361404419,
+      "inference_ms": 4.963
+    },
+    {
+      "text": "which papers do I submit for a travel claim",
+      "expected": "document_checklist",
+      "predicted": "document_checklist",
+      "raw_intent": "document_checklist",
+      "confidence": 0.9999237060546875,
+      "inference_ms": 4.992
+    },
+    {
+      "text": "tell me what to attach with my insurance claim",
+      "expected": "document_checklist",
+      "predicted": "document_checklist",
+      "raw_intent": "document_checklist",
+      "confidence": 0.9998577833175659,
+      "inference_ms": 6.047
+    },
+    {
+      "text": "give me the required claim documents for health insurance",
+      "expected": "document_checklist",
+      "predicted": "document_checklist",
+      "raw_intent": "document_checklist",
+      "confidence": 0.999988317489624,
+      "inference_ms": 6.334
+    },
+    {
+      "text": "can you show the list of documents the insurer needs",
+      "expected": "document_checklist",
+      "predicted": "document_checklist",
+      "raw_intent": "document_checklist",
+      "confidence": 0.999992847442627,
+      "inference_ms": 6.245
+    },
+    {
+      "text": "what records must accompany a reimbursement request",
+      "expected": "document_checklist",
+      "predicted": "document_checklist",
+      "raw_intent": "document_checklist",
+      "confidence": 0.9987791180610657,
+      "inference_ms": 5.816
+    },
+    {
+      "text": "I need the list of forms and evidence for life claims",
+      "expected": "document_checklist",
+      "predicted": "document_checklist",
+      "raw_intent": "document_checklist",
+      "confidence": 0.9999935626983643,
+      "inference_ms": 6.726
+    },
+    {
+      "text": "which files are required when I submit the claim",
+      "expected": "document_checklist",
+      "predicted": "document_checklist",
+      "raw_intent": "document_checklist",
+      "confidence": 0.9999936819076538,
+      "inference_ms": 6.193
+    },
+    {
+      "text": "can I see the paperwork checklist before submitting",
+      "expected": "document_checklist",
+      "predicted": "document_checklist",
+      "raw_intent": "document_checklist",
+      "confidence": 0.9999947547912598,
+      "inference_ms": 6.449
+    },
+    {
+      "text": "can you tell me where my open claim stands",
+      "expected": "claim_status",
+      "predicted": "claim_status",
+      "raw_intent": "claim_status",
+      "confidence": 0.9999765157699585,
+      "inference_ms": 5.517
+    },
+    {
+      "text": "has the case I filed been reviewed yet",
+      "expected": "claim_status",
+      "predicted": "claim_status",
+      "raw_intent": "claim_status",
+      "confidence": 0.9999784231185913,
+      "inference_ms": 5.211
+    },
+    {
+      "text": "I need an update on the claim I submitted earlier",
+      "expected": "claim_status",
+      "predicted": "claim_status",
+      "raw_intent": "claim_status",
+      "confidence": 0.9999849796295166,
+      "inference_ms": 6.397
+    },
+    {
+      "text": "show me what stage my registered claim is at",
+      "expected": "claim_status",
+      "predicted": "claim_status",
+      "raw_intent": "claim_status",
+      "confidence": 0.9997870326042175,
+      "inference_ms": 5.777
+    },
+    {
+      "text": "can I look up the progress of a submitted claim",
+      "expected": "claim_status",
+      "predicted": "claim_status",
+      "raw_intent": "claim_status",
+      "confidence": 0.9999856948852539,
+      "inference_ms": 5.231
+    },
+    {
+      "text": "is there an update on my reimbursement case",
+      "expected": "claim_status",
+      "predicted": "claim_status",
+      "raw_intent": "claim_status",
+      "confidence": 0.9999866485595703,
+      "inference_ms": 5.953
+    },
+    {
+      "text": "please track my existing claim",
+      "expected": "claim_status",
+      "predicted": "claim_status",
+      "raw_intent": "claim_status",
+      "confidence": 0.9997788071632385,
+      "inference_ms": 5.967
+    },
+    {
+      "text": "has my insurance claim been settled yet",
+      "expected": "claim_status",
+      "predicted": "claim_status",
+      "raw_intent": "claim_status",
+      "confidence": 0.9999810457229614,
+      "inference_ms": 6.509
+    },
+    {
+      "text": "find the latest status for my case reference",
+      "expected": "claim_status",
+      "predicted": "claim_status",
+      "raw_intent": "claim_status",
+      "confidence": 0.9999682903289795,
+      "inference_ms": 6.788
+    },
+    {
+      "text": "I want to follow up on a claim I already lodged",
+      "expected": "claim_status",
+      "predicted": "claim_status",
+      "raw_intent": "claim_status",
+      "confidence": 0.9999362230300903,
+      "inference_ms": 5.679
+    },
+    {
+      "text": "I would like a person from customer support",
+      "expected": "human_handoff",
+      "predicted": "human_handoff",
+      "raw_intent": "human_handoff",
+      "confidence": 0.9999644756317139,
+      "inference_ms": 5.382
+    },
+    {
+      "text": "please pass my issue to an agent",
+      "expected": "human_handoff",
+      "predicted": "human_handoff",
+      "raw_intent": "human_handoff",
+      "confidence": 0.9999527931213379,
+      "inference_ms": 5.75
+    },
+    {
+      "text": "could you get a staff member to help",
+      "expected": "human_handoff",
+      "predicted": "human_handoff",
+      "raw_intent": "human_handoff",
+      "confidence": 0.9997650980949402,
+      "inference_ms": 5.475
+    },
+    {
+      "text": "I want this escalated to a real person",
+      "expected": "human_handoff",
+      "predicted": "human_handoff",
+      "raw_intent": "human_handoff",
+      "confidence": 0.9999328851699829,
+      "inference_ms": 5.785
+    },
+    {
+      "text": "put me through to a support representative",
+      "expected": "human_handoff",
+      "predicted": "human_handoff",
+      "raw_intent": "human_handoff",
+      "confidence": 0.9999666213989258,
+      "inference_ms": 4.861
+    },
+    {
+      "text": "could I speak with a live operator",
+      "expected": "human_handoff",
+      "predicted": "human_handoff",
+      "raw_intent": "human_handoff",
+      "confidence": 0.9999237060546875,
+      "inference_ms": 4.783
+    },
+    {
+      "text": "can a human take over this conversation",
+      "expected": "human_handoff",
+      "predicted": "cancel",
+      "raw_intent": "cancel",
+      "confidence": 0.9883905649185181,
+      "inference_ms": 5.168
+    },
+    {
+      "text": "let me reach your customer care team",
+      "expected": "human_handoff",
+      "predicted": "human_handoff",
+      "raw_intent": "human_handoff",
+      "confidence": 0.9999593496322632,
+      "inference_ms": 4.835
+    },
+    {
+      "text": "transfer this enquiry to a human",
+      "expected": "human_handoff",
+      "predicted": "human_handoff",
+      "raw_intent": "human_handoff",
+      "confidence": 0.9999104738235474,
+      "inference_ms": 5.353
+    },
+    {
+      "text": "could I talk directly to an insurance representative",
+      "expected": "human_handoff",
+      "predicted": "human_handoff",
+      "raw_intent": "human_handoff",
+      "confidence": 0.9997181296348572,
+      "inference_ms": 6.407
+    },
+    {
+      "text": "can we stop here please",
+      "expected": "cancel",
+      "predicted": "greet",
+      "raw_intent": "greet",
+      "confidence": 0.5926701426506042,
+      "inference_ms": 5.006
+    },
+    {
+      "text": "discard this request and return to the menu",
+      "expected": "cancel",
+      "predicted": "cancel",
+      "raw_intent": "cancel",
+      "confidence": 0.9999740123748779,
+      "inference_ms": 4.786
+    },
+    {
+      "text": "I would rather end this conversation",
+      "expected": "cancel",
+      "predicted": "cancel",
+      "raw_intent": "cancel",
+      "confidence": 0.9999710321426392,
+      "inference_ms": 4.483
+    },
+    {
+      "text": "please abandon this task",
+      "expected": "cancel",
+      "predicted": "cancel",
+      "raw_intent": "cancel",
+      "confidence": 0.9999874830245972,
+      "inference_ms": 4.654
+    },
+    {
+      "text": "I do not want to continue with the current workflow",
+      "expected": "cancel",
+      "predicted": "cancel",
+      "raw_intent": "cancel",
+      "confidence": 0.999976396560669,
+      "inference_ms": 4.817
+    },
+    {
+      "text": "take me back to the starting options",
+      "expected": "cancel",
+      "predicted": "cancel",
+      "raw_intent": "cancel",
+      "confidence": 0.9957361221313477,
+      "inference_ms": 4.642
+    },
+    {
+      "text": "lets stop the current process",
+      "expected": "cancel",
+      "predicted": "cancel",
+      "raw_intent": "cancel",
+      "confidence": 0.9999808073043823,
+      "inference_ms": 4.506
+    },
+    {
+      "text": "clear the request I was making",
+      "expected": "cancel",
+      "predicted": "cancel",
+      "raw_intent": "cancel",
+      "confidence": 0.9979732632637024,
+      "inference_ms": 4.618
+    },
+    {
+      "text": "I want to go back and start over",
+      "expected": "cancel",
+      "predicted": "cancel",
+      "raw_intent": "cancel",
+      "confidence": 0.9999332427978516,
+      "inference_ms": 4.825
+    },
+    {
+      "text": "cancel my current task in this chat",
+      "expected": "cancel",
+      "predicted": "cancel",
+      "raw_intent": "cancel",
+      "confidence": 0.999942421913147,
+      "inference_ms": 4.804
+    },
+    {
+      "text": "find a Thai restaurant near me",
+      "expected": "out_of_scope",
+      "predicted": "out_of_scope",
+      "raw_intent": "out_of_scope",
+      "confidence": 0.9999970197677612,
+      "inference_ms": 4.603
+    },
+    {
+      "text": "give me the score of the latest football game",
+      "expected": "out_of_scope",
+      "predicted": "out_of_scope",
+      "raw_intent": "out_of_scope",
+      "confidence": 0.9999653100967407,
+      "inference_ms": 4.694
+    },
+    {
+      "text": "can you teach me to bake bread",
+      "expected": "out_of_scope",
+      "predicted": "out_of_scope",
+      "raw_intent": "out_of_scope",
+      "confidence": 0.9997027516365051,
+      "inference_ms": 4.912
+    },
+    {
+      "text": "what is the forecast for Mumbai on Friday",
+      "expected": "out_of_scope",
+      "predicted": "out_of_scope",
+      "raw_intent": "out_of_scope",
+      "confidence": 0.9842572212219238,
+      "inference_ms": 4.777
+    },
+    {
+      "text": "write a haiku about rain",
+      "expected": "out_of_scope",
+      "predicted": "out_of_scope",
+      "raw_intent": "out_of_scope",
+      "confidence": 0.999997615814209,
+      "inference_ms": 4.8
+    },
+    {
+      "text": "recommend a film to watch tonight",
+      "expected": "out_of_scope",
+      "predicted": "insurance_advisory",
+      "raw_intent": "insurance_advisory",
+      "confidence": 0.974157452583313,
+      "inference_ms": 4.537
+    },
+    {
+      "text": "book two seats on a train",
+      "expected": "out_of_scope",
+      "predicted": "out_of_scope",
+      "raw_intent": "out_of_scope",
+      "confidence": 0.9999967813491821,
+      "inference_ms": 4.65
+    },
+    {
+      "text": "show me the price of a new phone",
+      "expected": "out_of_scope",
+      "predicted": "out_of_scope",
+      "raw_intent": "out_of_scope",
+      "confidence": 0.9998672008514404,
+      "inference_ms": 5.158
+    },
+    {
+      "text": "explain the difference between a comet and an asteroid",
+      "expected": "out_of_scope",
+      "predicted": "out_of_scope",
+      "raw_intent": "out_of_scope",
+      "confidence": 0.8636481761932373,
+      "inference_ms": 4.954
+    },
+    {
+      "text": "what ingredients should I buy for soup",
+      "expected": "out_of_scope",
+      "predicted": "document_checklist",
+      "raw_intent": "document_checklist",
+      "confidence": 0.9968385696411133,
+      "inference_ms": 4.55
+    }
+  ]
+}

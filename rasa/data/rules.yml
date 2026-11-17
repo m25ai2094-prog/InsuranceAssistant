@@ -1,0 +1,62 @@
+version: "3.1"
+
+rules:
+  - rule: Route greet
+    steps:
+      - intent: greet
+      - action: action_insurance_workflow
+
+  - rule: Route insurance_advisory
+    steps:
+      - intent: insurance_advisory
+      - action: action_insurance_workflow
+
+  - rule: Route policy_details
+    steps:
+      - intent: policy_details
+      - action: action_insurance_workflow
+
+  - rule: Route premium_due
+    steps:
+      - intent: premium_due
+      - action: action_insurance_workflow
+
+  - rule: Route claim_intimation
+    steps:
+      - intent: claim_intimation
+      - action: action_insurance_workflow
+
+  - rule: Route document_checklist
+    steps:
+      - intent: document_checklist
+      - action: action_insurance_workflow
+
+  - rule: Route claim_status
+    steps:
+      - intent: claim_status
+      - action: action_insurance_workflow
+
+  - rule: Route human_handoff
+    steps:
+      - intent: human_handoff
+      - action: action_insurance_workflow
+
+  - rule: Route cancel
+    steps:
+      - intent: cancel
+      - action: action_insurance_workflow
+
+  - rule: Route out_of_scope
+    steps:
+      - intent: out_of_scope
+      - action: action_insurance_workflow
+
+  - rule: Route nlu_fallback
+    steps:
+      - intent: nlu_fallback
+      - action: action_insurance_workflow
+
+  - rule: Route provide_input
+    steps:
+      - intent: provide_input
+      - action: action_insurance_workflow

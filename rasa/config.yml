@@ -1,0 +1,30 @@
+recipe: default.v1
+assistant_id: iitj-insurance-assistant
+language: en
+
+pipeline:
+  - name: WhitespaceTokenizer
+  - name: CountVectorsFeaturizer
+    analyzer: word
+    min_ngram: 1
+    max_ngram: 2
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 3
+    max_ngram: 5
+  - name: DIETClassifier
+    epochs: 65
+    random_seed: 42
+    entity_recognition: false
+    constrain_similarities: true
+  - name: RegexEntityExtractor
+    use_lookup_tables: false
+    use_regexes: true
+    use_word_boundaries: true
+  - name: FallbackClassifier
+    threshold: 0.48
+    ambiguity_threshold: 0.07
+
+policies:
+  - name: RulePolicy
+    core_fallback_action_name: action_insurance_workflow

@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: insurance-assistant-demo
+    runtime: python
+    plan: free
+    region: oregon
+    buildCommand: pip install -r requirements-cloud.txt
+    startCommand: python cloud_run.py
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.11
+      - key: PYTHONDONTWRITEBYTECODE
+        value: "1"

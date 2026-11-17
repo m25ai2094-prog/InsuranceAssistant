@@ -1,0 +1,7 @@
+action_endpoint:
+  url: http://127.0.0.1:${INSURANCE_WEB_PORT}/internal/rasa/action
+  headers:
+    Authorization: Bearer ${INSURANCE_ACTION_TOKEN}
+
+tracker_store:
+  type: insurance.tracker.TurnTrackerStore
